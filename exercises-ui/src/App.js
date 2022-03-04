@@ -13,7 +13,7 @@ function App() {
     <div className='App'>
       <Router>
         <header>
-          Placeholder title for
+          Personal Exercise Log
         </header>
         <main>
           <Route path='/' exact>
