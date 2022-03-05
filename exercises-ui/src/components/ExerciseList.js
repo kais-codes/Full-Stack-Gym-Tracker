@@ -1,7 +1,7 @@
 import React from 'react';
 import Exercise from './Exercise';
 
-function MovieList({ exercises, onDelete }) {
+function MovieList({ exercises, onDelete, onEdit }) {
     return (
         <table id='exericses'>
             <thead>
@@ -16,7 +16,7 @@ function MovieList({ exercises, onDelete }) {
                 </tr>
             </thead>
             <tbody>
-                {exercises.map((exercise, i) => <Exercise exercise={exercise} key={i} onDelete={onDelete}/>)}            
+                {exercises.map((exercise, i) => <Exercise exercise={exercise} key={i} onDelete={onDelete} onEdit={onEdit}/>)}            
             </tbody>   
         </table>       
     );

@@ -1,5 +1,7 @@
 import './App.css';
-import React from 'react';
+
+//imports 
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 //imports the pages
@@ -9,6 +11,9 @@ import CreateExercisePage from './pages/CreateExercisePage'
 
 
 function App() {
+
+  const [exerciseToEdit, setExerciseToEdit] = useState()
+
   return (
     <div className='App'>
       <Router>
@@ -17,10 +22,10 @@ function App() {
         </header>
         <main>
           <Route path='/' exact>
-            <HomePage />
+            <HomePage setExerciseToEdit={setExerciseToEdit}/>
           </Route>
           <Route path='/edit-exercise'>
-            <EditExercisePage /> 
+            <EditExercisePage exerciseToEdit={exerciseToEdit}/> 
           </Route>
           <Route path='/create-exercise'>
             <CreateExercisePage />

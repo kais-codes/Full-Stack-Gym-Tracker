@@ -9,6 +9,8 @@ function CreateExercisePage() {
     const [unit, setUnit] = useState('')
     const [date, setDate] = useState('')
 
+    const history = useHistory()
+
     const logExercise = async () => {
         const newExercise = {name, reps, weight, unit, date};
         const response = await fetch('/exercises', { method: "POST", body: JSON.stringify(newExercise), headers: {'Content-Type': "application/json"} });
@@ -17,7 +19,7 @@ function CreateExercisePage() {
         }else {
             alert(`Failed to log exercise, state code: ${response.status}`);
         }
-        window.history.go('/')    
+        history.push('/') 
     };
     return (
         <div>

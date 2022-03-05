@@ -1,9 +1,9 @@
 import React from 'react';
 import ExerciseList from '../components/ExerciseList';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
-function HomePage() {
+function HomePage({ setExerciseToEdit }) {
 
     const [exercises, setExercise] = useState([]);
 
@@ -17,6 +17,13 @@ function HomePage() {
         loadExercises();
     }, []);
 
+    const history = useHistory();
+
+    const onEdit = exercise => {
+        setExerciseToEdit(exercise);
+        history.push('/edit-exercise')
+    };
+
     const onDelete = async (_id) => {
         const response = await fetch(`/exercises/${_id}`, {method: "DELETE"});
         if (response.status === 204){
@@ -29,7 +36,7 @@ function HomePage() {
 
     return (
         <>
-        <ExerciseList exercises={exercises} onDelete={onDelete}></ExerciseList>
+        <ExerciseList exercises={exercises} onDelete={onDelete} onEdit={onEdit}></ExerciseList>
         <Link to='/create-exercise'>Log a new exercise</Link>
         </>
     )
