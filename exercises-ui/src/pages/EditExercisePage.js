@@ -37,10 +37,11 @@ function EditExercisePage ({ exerciseToEdit }) {
             type="text"
             value={weight}
             onChange={exercise => setWeight(exercise.target.value)} />
-            <input
-            type="text"
-            value={unit}
-            onChange={exercise => setUnit(exercise.target.value)} />
+            <select onChange={exercise => setUnit(exercise.target.value)}>\
+                <option value=' '> </option>
+                <option value='lbs'>lbs</option>
+                <option value="kg">kg</option>
+            </select>
             <input
             type="text"
             value={date}
