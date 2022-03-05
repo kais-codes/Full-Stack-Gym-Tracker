@@ -9,6 +9,9 @@ import HomePage from './pages/HomePage';
 import EditExercisePage from './pages/EditExercisePage'
 import CreateExercisePage from './pages/CreateExercisePage'
 
+//imports components
+import Navigation from './components/Navigation';
+
 
 function App() {
 
@@ -18,8 +21,9 @@ function App() {
     <div className='App'>
       <Router>
         <header>
-          Personal Exercise Log
+          <h1>Personal Exercise Log</h1>
         </header>
+        <Navigation />
         <main>
           <Route path='/' exact>
             <HomePage setExerciseToEdit={setExerciseToEdit}/>
@@ -32,6 +36,10 @@ function App() {
           </Route>
         </main>
       </Router>
+      <footer>
+        <p> &copy; Kyrne Li
+        </p>
+      </footer>
     </div>
   )
 };

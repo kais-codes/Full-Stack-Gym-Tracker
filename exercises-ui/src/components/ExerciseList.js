@@ -3,7 +3,7 @@ import Exercise from './Exercise';
 
 function MovieList({ exercises, onDelete, onEdit }) {
     return (
-        <table id='exericses'>
+        <table className="centered">
             <thead>
                 <tr>
                     <th>Name</th>
