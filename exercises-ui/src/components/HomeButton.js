@@ -4,7 +4,7 @@ import { MdHome } from 'react-icons/md'
 
 function HomeButton() {
     return(
-        <Link to='/'><MdHome/></Link>
+        <Link to='/' className='iconSize'><MdHome/></Link>
     )
 };
 

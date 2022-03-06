@@ -2,12 +2,62 @@
   text-align: center;
 }
 
+body {
+  background-color: #F7E3D4;
+}
+
+header {
+  border: solid;
+  margin: 1%;
+  color: #236AB9;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #FD7208
+}
+
+table { 
+  border-collapse: collapse;
+  margin: 1%;
+}
+
+th {
+  padding: 10px;
+  font-size: 25px;
+}
+
+tr:hover {
+  background-color: white;
+  border-style: ridge;
+  transform: scale(1.3);
+}
+
+td {
+  padding: 3px;
+}
+
+
+p {
+  color: black;
+}
+
 .centered {
   margin-left: auto;
   margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.iconSize {
+  font-size: 2em;
+  margin: 3%;
 }
-

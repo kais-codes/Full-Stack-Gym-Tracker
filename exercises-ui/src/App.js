@@ -22,6 +22,7 @@ function App() {
       <Router>
         <header>
           <h1>Personal Exercise Log</h1>
+          <p>A Full Stack MERN App</p>
         </header>
         <Navigation />
         <main>
@@ -37,8 +38,7 @@ function App() {
         </main>
       </Router>
       <footer>
-        <p> &copy; Kyrne Li
-        </p>
+        <p> &copy; Kyrne Li</p>
       </footer>
     </div>
   )

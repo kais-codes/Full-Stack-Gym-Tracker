@@ -55,4 +55,4 @@ function CreateExercisePage() {
     );
 };
 
-export default CreateExercisePage
+export default CreateExercisePage;

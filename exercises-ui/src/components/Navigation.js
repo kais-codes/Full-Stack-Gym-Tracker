@@ -4,10 +4,10 @@ import HomeButton from './HomeButton';
 
 function Navigation() {
     return (
-        <>
-            <HomeButton />
-            <AddNewEntry />
-        </>
+        <article>
+            <HomeButton/>
+            <AddNewEntry/>
+        </article>
     )
 };
 
