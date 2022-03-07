@@ -4,9 +4,6 @@ import Exercise from './Exercise';
 function MovieList({ exercises, onDelete, onEdit }) {
     return (
         <table className="centered">
-            <caption>
-                Here are your logged exercises
-            </caption>
             <thead>
                 <tr>
                     <th>Name</th>

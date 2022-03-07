@@ -24,7 +24,7 @@ function EditExercisePage ({ exerciseToEdit }) {
 
     return (
         <div>
-            <h1>Edit Exercise Log</h1>
+            <h1>Edit Exercise Entry</h1>
             <input
             type="text"
             value={name}
@@ -37,7 +37,7 @@ function EditExercisePage ({ exerciseToEdit }) {
             type="text"
             value={weight}
             onChange={exercise => setWeight(exercise.target.value)} />
-            <select onChange={exercise => setUnit(exercise.target.value)}>\
+            <select value={unit} placeholder="Units" onChange={exercise => setUnit(exercise.target.value)}>\
                 <option value=' '> </option>
                 <option value='lbs'>lbs</option>
                 <option value="kg">kg</option>

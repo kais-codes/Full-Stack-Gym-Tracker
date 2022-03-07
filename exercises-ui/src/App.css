@@ -3,13 +3,13 @@
 }
 
 body {
-  background-color: #F7E3D4;
+  background-color: #1F2833;
 }
 
 header {
   border: solid;
   margin: 1%;
-  color: #236AB9;
+  color: #85DDD7;
 }
 
 footer {
@@ -20,11 +20,11 @@ footer {
 }
 
 a:visited {
-  color: black;
+  color: #85DDD7;
 }
 
 a:hover {
-  color: #FD7208
+  color: white;
 }
 
 table { 
@@ -33,23 +33,36 @@ table {
 }
 
 th {
+  color: #45A29E;
   padding: 10px;
   font-size: 25px;
 }
 
 tr:hover {
-  background-color: white;
-  border-style: ridge;
-  transform: scale(1.3);
+
+  border-style: none;
+  transform: scale(1.35);
+
 }
 
 td {
+  color: #C5C6C7;
   padding: 3px;
+  font-size: 20px;
 }
 
 
 p {
-  color: black;
+  color: #72B4E4;
+}
+
+h1 { 
+  color: #85DDD7
+}
+
+.center { 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .centered {

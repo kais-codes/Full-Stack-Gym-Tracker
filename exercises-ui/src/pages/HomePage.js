@@ -2,8 +2,6 @@ import React from 'react';
 import ExerciseList from '../components/ExerciseList';
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import Navigation from '../components/Navigation';
-
 
 
 function HomePage({ setExerciseToEdit }) {
@@ -38,10 +36,7 @@ function HomePage({ setExerciseToEdit }) {
     }
 
     return (
-        <>
-
         <ExerciseList exercises={exercises} onDelete={onDelete} onEdit={onEdit}></ExerciseList>
-        </>
     )
 };
 
