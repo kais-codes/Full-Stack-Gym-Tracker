@@ -50,6 +50,6 @@ function EditExercisePage ({ exerciseToEdit }) {
                 onClick={editExercise}>Save Changes</button>
         </div>
     );
-}
+};
 
-export default EditExercisePage
+export default EditExercisePage;

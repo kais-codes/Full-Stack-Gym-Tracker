@@ -33,11 +33,11 @@ function HomePage({ setExerciseToEdit }) {
         } else{
             console.error(`Failed exercise delete request for _id=${_id}, error code = ${response.status}`);
         };
-    }
+    };
 
     return (
         <ExerciseList exercises={exercises} onDelete={onDelete} onEdit={onEdit}></ExerciseList>
-    )
+    );
 };
 
 export default HomePage;

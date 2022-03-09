@@ -5,7 +5,7 @@ import { MdHome } from 'react-icons/md'
 function HomeButton() {
     return(
         <Link to='/' className='iconSize'><MdHome/></Link>
-    )
+    );
 };
 
-export default HomeButton
+export default HomeButton;

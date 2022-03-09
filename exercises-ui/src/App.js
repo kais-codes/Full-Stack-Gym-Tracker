@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 //imports the pages
 import HomePage from './pages/HomePage';
-import EditExercisePage from './pages/EditExercisePage'
-import CreateExercisePage from './pages/CreateExercisePage'
+import EditExercisePage from './pages/EditExercisePage';
+import CreateExercisePage from './pages/CreateExercisePage';
 
 //imports components
 import Navigation from './components/Navigation';
@@ -41,7 +41,7 @@ function App() {
         <p> &copy; Kyrne Li</p>
       </footer>
     </div>
-  )
+  );
 };
 
 export default App;

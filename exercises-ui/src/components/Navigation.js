@@ -8,7 +8,7 @@ function Navigation() {
             <HomeButton/>
             <AddNewEntry/>
         </article>
-    )
+    );
 };
 
 export default Navigation;
